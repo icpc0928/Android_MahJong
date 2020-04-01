@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".RoomActivity">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        >
+        <com.lai.library.ButtonStyle
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            app:type="warning"
+            android:text="返回"
+            android:textSize="28sp"
+            app:stroke_color="#5b5b5b"
+            app:stroke_width="2dp"
+            />
+        <com.lai.library.ButtonStyle
+            android:id="@+id/creatRoom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:text="創建房間"
+            android:textSize="42sp"
+            app:stroke_color="#5b5b5b"
+            app:stroke_width="2dp"
+            />
+        <com.lai.library.ButtonStyle
+            android:id="@+id/inRoom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_above="@id/creatRoom"
+            android:text="加入房間"
+            android:textSize="42sp"
+            app:stroke_color="#5b5b5b"
+            app:stroke_width="2dp"
+            />
+        <EditText
+            android:id="@+id/numRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/inRoom"
+            android:inputType="number"
+            android:textSize="42sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/numRoom"
+            android:text="輸入房號"
+            android:textSize="42sp"
+            android:gravity="center"
+            />
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        >
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

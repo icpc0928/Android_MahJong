@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LobbyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="5"
+        >
+        <com.lai.library.ButtonStyle
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            app:stroke_color="#5b5b5b"
+            app:stroke_width="3dp"
+
+            />
+        <com.lai.library.ButtonStyle
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="開始遊戲"
+            android:textSize="54sp"
+            app:stroke_color="#5b5b5b"
+            app:stroke_width="3dp"
+            />
+        <com.lai.library.ButtonStyle
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            app:stroke_color="#5b5b5b"
+            app:stroke_width="3dp"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+
+        >
+        <com.lai.library.ButtonStyle
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:stroke_color="#fffff"
+            app:stroke_width="3dp"
+            app:normal_color="#5B5B5B"
+            android:text="設定"
+            android:textSize="30sp"
+            />
+        <com.lai.library.ButtonStyle
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:stroke_color="#fffff"
+            app:stroke_width="3dp"
+            app:normal_color="#5B5B5B"
+            android:text="設定"
+            android:textSize="30sp"
+            />
+        <com.lai.library.ButtonStyle
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:stroke_color="#fffff"
+            app:stroke_width="3dp"
+            app:type="warning"
+            android:text="儲值中心"
+            android:textSize="30sp"
+            />
+        <com.lai.library.ButtonStyle
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:stroke_color="#fffff"
+            app:stroke_width="3dp"
+            app:normal_color="#5B5B5B"
+            android:text="個人資料"
+            android:textSize="30sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
