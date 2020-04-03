@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
 
     <ImageView
         android:layout_width="0dp"
@@ -30,21 +30,16 @@
             android:orientation="horizontal"
             android:paddingVertical="10dp">
 
-            <com.lai.library.ButtonStyle
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="帳號"
-                app:corner="10dp" />
+
 
             <EditText
+                android:id="@+id/account"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="3"
-                android:inputType="text" />
+                android:inputType="text"
+                android:hint="輸入帳號"/>
         </LinearLayout>
 
         <LinearLayout
@@ -55,22 +50,15 @@
             android:paddingVertical="10dp"
 
             >
-            <com.lai.library.ButtonStyle
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="5dp"
-                app:corner="10dp"
-                android:text="密碼"
-                android:gravity="center"
-                />
+
             <EditText
+                android:id="@+id/password"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="3"
                 android:layout_margin="5dp"
                 android:inputType="textPassword"
-
+                android:hint="輸入密碼"
                 />
         </LinearLayout>
 
@@ -81,11 +69,10 @@
             android:orientation="horizontal"
             android:paddingVertical="10dp"
             >
-            <com.lai.library.ButtonStyle
+            <Button
+                android:id="@+id/loginBtn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:type="ok"
-                app:corner="10dp"
                 android:text="登入"
                 android:layout_margin="10dp"
                 />
@@ -98,21 +85,18 @@
             android:orientation="horizontal"
             android:paddingVertical="10dp"
             >
-            <com.lai.library.ButtonStyle
+            <Button
+                android:id="@+id/gotoRegister"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:corner="10dp"
-                app:type="warning"
                 android:text="註冊"
                 android:layout_margin="10dp"
                 />
-            <com.lai.library.ButtonStyle
+            <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="3"
-                app:type="warning"
-                app:corner="10dp"
                 android:text="忘記密碼"
                 android:layout_margin="10dp"
                 />

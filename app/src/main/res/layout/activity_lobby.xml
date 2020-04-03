@@ -7,6 +7,26 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".LobbyActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Welcome  "
+            />
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="username"
+            />
+
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -54,7 +74,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:stroke_color="#fffff"
+
             app:stroke_width="3dp"
             app:normal_color="#5B5B5B"
             android:text="設定"
@@ -64,7 +84,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:stroke_color="#fffff"
+
             app:stroke_width="3dp"
             app:normal_color="#5B5B5B"
             android:text="設定"
@@ -74,7 +94,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:stroke_color="#fffff"
+
             app:stroke_width="3dp"
             app:type="warning"
             android:text="儲值中心"
@@ -84,7 +104,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:stroke_color="#fffff"
+
             app:stroke_width="3dp"
             app:normal_color="#5B5B5B"
             android:text="個人資料"

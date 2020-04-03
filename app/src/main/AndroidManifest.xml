@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-
     package="com.example.mahjong">
 
-
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,10 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".RoomActivity"></activity>
-        <activity android:name=".LobbyActivity" />
+        <activity android:name=".RegisterActivity"
+            android:screenOrientation="landscape"
+            ></activity>
+        <activity android:name=".RoomActivity"
+            android:screenOrientation="landscape"
+            />
+        <activity android:name=".LobbyActivity"
+            android:screenOrientation="landscape"
+            />
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="landscape">
             <intent-filter>
